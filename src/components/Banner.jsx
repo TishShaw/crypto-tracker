@@ -4,8 +4,7 @@ import BANNERIMG from '../images/banner2.jpg';
 import React from 'react';
 import Carousel from './Carousel';
 
-const Banner = () => {
-    const useStyles = makeStyles(() => ({
+const useStyles = makeStyles(() => ({
         banner: {
             backgroundImage: '',
         },
@@ -24,12 +23,14 @@ const Banner = () => {
             textAlign: 'center'
         }
     }));
+const Banner = () => {
+    
 
     const classes = useStyles();
 
     return (
         <div className={classes.banner}>
-            <img src={BANNERIMG} width="100%" alt="banner" style={{position: 'absolute'}}/>
+            <img src={BANNERIMG} width="100%" height='400px' alt="banner" style={{position: 'absolute'}}/>
             <Container className={classes.bannerContent}>
                 <div className={classes.tagLine}>
                     <Typography 
