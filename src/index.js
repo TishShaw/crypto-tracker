@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom';
+import CryptoContext from './CryptoContext';
 
 ReactDOM.render(
 	<Router>
-		<App />
+		<CryptoContext>
+      <App />
+    </CryptoContext>
 	</Router>,
 	document.getElementById('root')
 );
